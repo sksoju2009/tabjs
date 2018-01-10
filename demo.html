@@ -3,10 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+<style type="text/css">
+li{float: left;width:100px;height:30px;text-align: center;line-height:30px;background:#ccc;list-style:none;
+cursor:pointer;margin-right:10px;}
+#list{overflow: hidden;}
+#list .active{background:orange;color:#fff;}
+#box>div{width:200px;height:200px;border:1px solid #ccc;display:none;}
+</style>	
 	<script type="text/javascript" src="tab.js"></script>
 </head>
 <body>
-	<input type="button">
-	<div></div>
+	<ul id="list">
+		<li class="active">新闻</li>
+		<li>娱乐</li>
+		<li>音乐</li>
+	</ul>
+	<div id="box">
+		<div style="display:block">新闻内容</div>
+		<div>娱乐内容</div>
+		<div>音乐内容</div>
+	</div>
 </body>
 </html>
